@@ -11,10 +11,9 @@ public class MyWebApplication {
 
 	@Controller
 	public class HelloController {
-		@ResponseBody
 		@RequestMapping("/hello")
 		public String hello() {
-			return "/WEB-INF/views/hello.jsp";
+			return "hello";
 		}
 	}
 	public static void main(String[] args) {
